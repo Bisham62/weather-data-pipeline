@@ -30,7 +30,7 @@ def insert_weather(df):
     conn = sqlite3.connect("weather.db")
     cursor = conn.cursor()
 
-    time = df["time"][0]
+    time = str(df["time"][0])
     temperature = df["temperature"][0]
     windspeed = df["windspeed"][0]
 
